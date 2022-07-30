@@ -44,7 +44,7 @@ body {
 	font-size: 40px;
 }
 
-.div_picture {
+.div__picture {
 	display: flex;
 	align-items: center;
 	justify-content: center;
