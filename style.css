@@ -1,0 +1,59 @@
+:root {
+	--purple-50: #FAF5FF;
+	--purple-100: #F3E8FF;
+	--purple-200: #E9D5FF;
+	--purple-300: #D8B4FE;
+	--purple-400: #C084FC;
+	--purple-500: #A855F7;
+	--purple-600: #9333EA;
+	--purple-700: #7E22CE;
+	--purple-800: #6B21A8;
+	--purple-900: #581C87;
+	--dark: #1E1E1E;
+	--outline: rgba(89, 28, 135, 0.2);
+}
+
+body {
+	background-color: var(--purple-50);
+}
+
+.name {
+	color: var(--purple-900);
+	font-family: 'Plus Jakarta Sans';
+	font-weight: bold;
+}
+
+.text {
+	color: var(--purple-900);
+	font-family: 'Plus Jakarta Sans';
+	font-weight: normal;
+}
+
+.action {
+	font-family: 'Plus Jakarta Sans';
+	font-weight: 500;
+	font-size: 20px;
+	background-color: var(--purple-200);
+	color: var(--purple-600);
+	border: 0;
+	border-radius: 2rem;
+	padding: 15px 25px;
+	cursor: pointer;
+	transition: font-weight .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
+}
+
+.action:hover {
+	transition: font-weight .2s ease-in-out;
+	transition: box-shadow .2s ease;
+	font-weight: 900;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+
+.shadow {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
