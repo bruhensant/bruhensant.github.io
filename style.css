@@ -9,6 +9,7 @@
 	--purple-700: #7E22CE;
 	--purple-800: #6B21A8;
 	--purple-900: #581C87;
+	--light: var(--purple-50);
 	--dark: #1E1E1E;
 	--outline: rgba(89, 28, 135, 0.2);
 }
@@ -17,15 +18,14 @@ body {
 	background-color: var(--purple-50);
 	padding: 0 8em;
 	height: 97vh;
-
 }
 
 .main {
 	display: flex;
 	flex-direction: row;
-	height: 100%;
-
 	justify-content: space-between;
+
+	height: 100%;
 }
 
 .content {
@@ -33,11 +33,9 @@ body {
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-
-
 }
 
-.name {
+.text {
 	color: var(--purple-900);
 	font-family: 'Plus Jakarta Sans';
 	font-weight: normal;
@@ -59,7 +57,7 @@ body {
 .action {
 	font-family: 'Plus Jakarta Sans';
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 18px;
 	background-color: var(--purple-200);
 	color: var(--purple-600);
 	border: 0;
@@ -68,22 +66,58 @@ body {
 	cursor: pointer;
 
 	display: flex;
+	align-items: center;
+	gap: 20px;
 	flex-wrap: nowrap;
 
 	transition: box-shadow .4s ease;
 
+	/* Safari */
+	-webkit-user-select: none;
+
+	/* Firefox */
+	-moz-user-select: none;
+
+	/* IE10+/Edge */
+	-ms-user-select: none;
+
+	/* Standard */
+	user-select: none;
 
 }
 
 .action:hover {
-	transition: box-shadow .4s ease;
-	font-weight: 900;
+	transition-property: box-shadow, background-color, font-weight;
+	transition: .4s ease;
+
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
 		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
+.action:active {
+	background-color: var(--purple-300);
+	color: var(--purple-700);
 
-.shadow {
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+	transition: background-color .2s ease;
+}
+
+/* Scrollbar */
+/* Largura */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Fundo */
+::-webkit-scrollbar-track {
+	background: var(--purple-100);
+}
+
+/* Puxador */
+::-webkit-scrollbar-thumb {
+	background: var(--purple-300);
+}
+
+/* Hover do Puxador */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--purple-400);
 }
