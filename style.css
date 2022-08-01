@@ -55,21 +55,22 @@ body {
 }
 
 .action {
-	font-family: 'Plus Jakarta Sans';
-	font-weight: 700;
-	font-size: 18px;
-	background-color: var(--purple-200);
-	color: var(--purple-600);
-	border: 0;
-	border-radius: 2rem;
-	padding: 15px 25px;
-	cursor: pointer;
-
 	display: flex;
 	align-items: center;
 	gap: 20px;
 	flex-wrap: nowrap;
 
+	background-color: var(--purple-200);
+	color: var(--purple-600);
+	border: 0;
+	border-radius: 2rem;
+	padding: 15px 25px;
+
+	font-family: 'Plus Jakarta Sans';
+	font-weight: 700;
+	font-size: 18px;
+
+	cursor: pointer;
 	transition: box-shadow .4s ease;
 
 	/* Safari */
@@ -83,7 +84,6 @@ body {
 
 	/* Standard */
 	user-select: none;
-
 }
 
 .action:hover {
