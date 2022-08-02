@@ -18,53 +18,87 @@
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+
+
 	background-color: var(--purple-50);
 	background-image: url("./src/waves.svg");
 	height: 96vh;
+	margin: 7em;
 }
 
 .hero {
-
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
-
+	justify-content: space-between;
 	height: 100%;
+
+	margin-bottom: 2em;
 }
 
-.skills {
+.card-holder {
 	display: flex;
-	gap: 20px;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	margin-bottom: 2em;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-top: 15px;
 }
 
 .card-title {
-	flex-direction: column;
-	display: flex;
-	gap: 15px;
-}
-
-.card-title h4 {
 	margin: 0;
 	font-family: 'Plus Jakarta Sans';
 	font-weight: 900;
+	color: var(--purple-600);
 }
 
-.card h5 {
-	margin: 0;
-	font-family: 'Plus Jakarta Sans';
-	font-weight: 00;
-}
-
-.card-title * {
+.card-content * {
 	font-family: 'Plus Jakarta Sans';
 	color: var(--purple-900);
 }
 
-.card {
-	padding: 15px;
+.additional-info {
+	font-weight: 100;
+	font-size: 14px;
+	margin: 0;
+}
+
+.item-title {
+	font-family: 'Plus Jakarta Sans';
+	font-weight: 900;
+	margin: 0;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.item-text {
+	font-family: 'Plus Jakarta Sans';
+	font-weight: 300;
+	margin: 0;
+	font-style: italic;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 20px;
 	border-radius: 6px;
 	border: 2px solid var(--outline);
+
+	background-color: var(--purple-50);
 }
 
 .content {
@@ -94,7 +128,7 @@ body {
 	font-size: 40px;
 }
 
-.div_picture {
+.div-picture {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -105,8 +139,6 @@ body {
 	width: 300px;
 	border-radius: 170px;
 	border: solid 10px var(--purple-200);
-
-
 }
 
 .chip {
@@ -172,7 +204,6 @@ body {
 
 	/* Standard */
 	user-select: none;
-
 }
 
 .action:hover {
