@@ -90,6 +90,17 @@ body {
 	font-style: italic;
 }
 
+.highlight {
+	padding: 15px;
+	border-radius: 6px;
+	background-color: var(--purple-200);
+	border: solid 2px var(--purple-600);
+}
+
+.highlight h4 {
+	color: var(--purple-600);
+}
+
 .card-content {
 	display: flex;
 	flex-direction: column;
@@ -101,7 +112,7 @@ body {
 	background-color: var(--purple-50);
 }
 
-.content {
+.hero-content {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -109,7 +120,6 @@ body {
 }
 
 .emoji {
-
 	height: 64px;
 	position: relative;
 	opacity: 0;
@@ -118,7 +128,6 @@ body {
 	transition: opacity .4s ease;
 
 	-webkit-user-drag: none;
-
 }
 
 .text {
