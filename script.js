@@ -24,3 +24,11 @@ function emoji() {
 	emojiContainer.src = emojis[randomEmoji];
 	emojiContainer.style.marginBottom = '-3%';
 }
+
+function cursor() {
+	const cursor = document.querySelector('.cursor');
+	document.addEventListener('mousemove', (e) => {
+		cursor.style.left = e.clientX + 'px';
+		cursor.style.top = e.clientY + 'px';
+	})
+}
