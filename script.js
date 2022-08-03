@@ -1,6 +1,3 @@
-console.log('rodou!')
-
-
 function emoji() {
 
 	let emojiContainer = document.getElementById("emoji");
@@ -27,4 +24,3 @@ function emoji() {
 	emojiContainer.src = emojis[randomEmoji];
 	emojiContainer.style.marginBottom = '-3%';
 }
-
