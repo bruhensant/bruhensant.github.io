@@ -13,7 +13,6 @@
 	--dark: #1E1E1E;
 	--outline: rgba(89, 28, 135, 0.2);
 
-
 	--dark-purple-200: #B376E3;
 	--dark-bg-50: #1B1D1E;
 }
@@ -26,7 +25,6 @@ html {
 body {
 	display: flex;
 	flex-direction: column;
-
 
 	background-repeat: repeat;
 
@@ -74,6 +72,34 @@ body {
 	color: var(--purple-900);
 }
 
+.select-holder {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.card-select {
+	font-family: 'Plus Jakarta Sans';
+	color: var(--purple-900);
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 20px;
+	border-radius: 6px;
+	border: 2px solid var(--outline);
+
+	background-color: var(--purple-50);
+
+	transition: all .2s ease;
+
+}
+
+.card-select:hover {
+	background-color: var(--purple-900);
+	color: var(--purple-50);
+}
+
 .additional-info {
 	font-weight: 100;
 	font-size: 14px;
@@ -114,12 +140,10 @@ a.link:active {
 	text-decoration: none;
 }
 
-
 a.link {
 	transition: background-color .1s ease;
 
 }
-
 
 .item-text {
 	font-family: 'Plus Jakarta Sans';
@@ -146,7 +170,6 @@ a.link {
 	padding: 20px;
 	border-radius: 6px;
 	border: 2px solid var(--outline);
-
 
 	background-color: var(--purple-50);
 }
@@ -186,39 +209,6 @@ a.link {
 	width: 300px;
 	border-radius: 170px;
 	border: solid 10px var(--purple-200);
-}
-
-.chip {
-	position: absolute;
-
-	font-family: 'Plus Jakarta Sans';
-	font-weight: 700;
-	font-size: 18px;
-	background-color: var(--purple-600);
-	color: var(--purple-200);
-	border-radius: 2rem;
-	padding: 15px 25px;
-
-	display: flex;
-	align-items: center;
-	gap: 20px;
-	flex-wrap: nowrap;
-
-	width: fit-content;
-
-	transition: box-shadow .4s ease;
-
-	/* Safari */
-	-webkit-user-select: none;
-
-	/* Firefox */
-	-moz-user-select: none;
-
-	/* IE10+/Edge */
-	-ms-user-select: none;
-
-	/* Standard */
-	user-select: none;
 }
 
 .action {

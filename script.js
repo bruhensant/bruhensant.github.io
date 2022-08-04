@@ -46,6 +46,7 @@ function leave() {
 	cursor.innerHTML = ' ';
 	cursor.style.transform = 'scale(1)';
 	cursor.style.opacity = '0.8';
+	cursor.style.backgroundColor = '#581C87';
 }
 
 function activate() {
@@ -61,5 +62,24 @@ function handshake() {
 	cursor.style.opacity = '1';
 	cursor.innerHTML = '👋';
 	cursor.style.fontSize = '8px';
-	cursor.style.color = 'white';
+}
+
+function recruiter() {
+	const cursor = document.querySelector('.cursor');
+
+	cursor.style.transform = 'scale(2)';
+	cursor.style.backgroundColor = '#D8B4FE';
+	cursor.style.opacity = '1';
+	cursor.innerHTML = '👨‍🚀';
+	cursor.style.fontSize = '8px';
+}
+
+function designeer() {
+	const cursor = document.querySelector('.cursor');
+
+	cursor.style.transform = 'scale(2)';
+	cursor.style.backgroundColor = '#D8B4FE';
+	cursor.style.opacity = '1';
+	cursor.innerHTML = '👀';
+	cursor.style.fontSize = '8px';
 }
