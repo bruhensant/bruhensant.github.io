@@ -351,12 +351,20 @@ a.link {
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	background-color: var(--purple-50);
-	transition: 0.05s;
+	background-color: var(--purple-900);
+	transition: all 0.05s;
 	transform: translate(-50%, -50%);
-	mix-blend-mode: exclusion;
 	pointer-events: none;
+
+	opacity: 0.8;
 	z-index: 1;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-family: 'Plus Jakarta Sans';
+
 }
 
 @media screen and (max-width: 600px) {
