@@ -102,6 +102,7 @@ a.link:visited {
 a.link:hover {
 	text-decoration: none;
 	transition: background-color .1s ease;
+	cursor: pointer;
 
 	background-color: var(--purple-600);
 	color: var(--purple-50);
@@ -234,6 +235,8 @@ a.link {
 	align-items: center;
 	gap: 20px;
 	flex-wrap: nowrap;
+	cursor: pointer;
+
 
 	transition: box-shadow .4s ease;
 
@@ -364,12 +367,35 @@ a.link {
 	z-index: 1;
 }
 
+
+
+* {
+	cursor: none;
+}
+
 @media screen and (max-width: 600px) {
 	.cursor {
 		visibility: hidden;
 	}
 }
 
-* {
-	cursor: none;
+@media screen and (max-width: 600px) {
+	.cursor {
+		visibility: hidden;
+	}
+
+	* {
+		cursor: default;
+	}
+}
+
+@media screen and (min-width: 1921px) {
+	* {
+		cursor: default;
+	}
+
+	.cursor {
+		visibility: hidden;
+	}
+
 }
