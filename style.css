@@ -356,10 +356,13 @@ a.link {
 	transform: translate(-50%, -50%);
 	mix-blend-mode: difference;
 	pointer-events: none;
-
-	z-index: 2;
+	z-index: 1;
 }
 
 * {
 	cursor: none;
+}
+
+.hover {
+	transform: scale(3);
 }
