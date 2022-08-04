@@ -102,7 +102,6 @@ a.link:visited {
 a.link:hover {
 	text-decoration: none;
 	transition: background-color .1s ease;
-	cursor: pointer;
 
 	background-color: var(--purple-600);
 	color: var(--purple-50);
@@ -235,7 +234,6 @@ a.link {
 	align-items: center;
 	gap: 20px;
 	flex-wrap: nowrap;
-	cursor: pointer;
 
 
 	transition: box-shadow .4s ease;
@@ -396,6 +394,14 @@ a.link {
 
 	.cursor {
 		visibility: hidden;
+	}
+
+	.action:hover {
+		cursor: pointer;
+	}
+
+	a.link:hover {
+		cursor: pointer;
 	}
 
 }
