@@ -354,9 +354,15 @@ a.link {
 	background-color: var(--purple-50);
 	transition: 0.05s;
 	transform: translate(-50%, -50%);
-	mix-blend-mode: difference;
+	mix-blend-mode: exclusion;
 	pointer-events: none;
 	z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+	.cursor {
+		visibility: hidden;
+	}
 }
 
 * {
