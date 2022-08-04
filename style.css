@@ -347,22 +347,23 @@ a.link {
 }
 
 .cursor {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	position: fixed;
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
 	background-color: var(--purple-900);
 	transition: all 0.05s;
-	transform: translate(-50%, -50%);
 	pointer-events: none;
 
 	opacity: 0.8;
 	z-index: 1;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
 
+	/* ! eperimental */
 	font-family: 'Plus Jakarta Sans';
 
 }

@@ -45,22 +45,10 @@ function shrink() {
 
 	cursor.style.transform = 'scale(1)';
 	cursor.style.opacity = '0.8'
-
 }
 
 function activate() {
 	const cursor = document.querySelector('.cursor');
 
 	cursor.style.transform = 'scale(2)';
-}
-
-function eua() {
-	const cursor = document.querySelector('.cursor');
-
-	cursor.innerHTML = 'Olá!';
-	cursor.style.fontSize = '10px';
-	cursor.style.padding = '10px';
-
-	cursor.style.transform = 'scale(2)';
-
 }
