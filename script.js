@@ -33,22 +33,33 @@ function cursor() {
 	});
 
 }
-function grow() {
-	const cursor = document.querySelector('.cursor');
+function hover() {
+	const cursor = document.querySelector('.cursor').style;
 
-	cursor.style.transform = 'scale(3)';
-	cursor.style.opacity = '0.5'
+	cursor.opacity = '0.5';
+	cursor.transform = 'scale(3)';
 }
 
-function shrink() {
+function leave() {
 	const cursor = document.querySelector('.cursor');
 
+	cursor.innerHTML = ' ';
 	cursor.style.transform = 'scale(1)';
-	cursor.style.opacity = '0.8'
+	cursor.style.opacity = '0.8';
 }
 
 function activate() {
+	const cursor = document.querySelector('.cursor').style;
+
+	cursor.transform = 'scale(2)';
+}
+
+function handshake() {
 	const cursor = document.querySelector('.cursor');
 
 	cursor.style.transform = 'scale(2)';
+	cursor.style.opacity = '1';
+	cursor.innerHTML = '👋';
+	cursor.style.fontSize = '8px';
+	cursor.style.color = 'white';
 }

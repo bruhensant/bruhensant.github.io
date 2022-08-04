@@ -350,6 +350,7 @@ a.link {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: nowrap;
 
 	position: fixed;
 	width: 20px;
@@ -361,11 +362,6 @@ a.link {
 
 	opacity: 0.8;
 	z-index: 1;
-
-
-	/* ! eperimental */
-	font-family: 'Plus Jakarta Sans';
-
 }
 
 @media screen and (max-width: 600px) {
