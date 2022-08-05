@@ -139,7 +139,6 @@ a.link:active {
 
 a.link {
 	transition: background-color .1s ease;
-
 }
 
 .item-text {
@@ -229,7 +228,6 @@ a.link {
 	gap: 10px;
 	flex-wrap: nowrap;
 
-
 	transition: box-shadow .4s ease;
 
 	/* Safari */
@@ -261,7 +259,6 @@ a.link {
 
 	transition: background-color .2s ease;
 }
-
 
 /* ? EXPERIMENTAL */
 
@@ -359,8 +356,6 @@ a.link {
 	z-index: 1;
 }
 
-
-
 * {
 	cursor: none;
 }
@@ -397,5 +392,4 @@ a.link {
 	a.link:hover {
 		cursor: pointer;
 	}
-
 }
