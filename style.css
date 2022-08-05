@@ -26,10 +26,17 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height: 96vh;
 
 	background-color: var(--purple-50);
 	background-image: url("./src/noise.svg");
+
+}
+
+.error-text {
 	font-size: 128px;
+	color: var(--purple-900);
+	margin: 0;
 }
 
 .div-error {
