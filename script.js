@@ -70,7 +70,7 @@ function recruiter() {
 
 	cursor.style.transform = 'scale(3)';
 	cursor.style.backgroundColor = '#D8B4FE';
-	cursor.style.opacity = '1';
+	cursor.style.opacity = '0.9';
 	cursor.innerHTML = '👨‍🚀';
 	cursor.style.fontSize = '7px';
 }
@@ -80,7 +80,7 @@ function designeer() {
 
 	cursor.style.transform = 'scale(3)';
 	cursor.style.backgroundColor = '#D8B4FE';
-	cursor.style.opacity = '1';
+	cursor.style.opacity = '0.9';
 	cursor.innerHTML = '👀';
 	cursor.style.fontSize = '7px';
 }

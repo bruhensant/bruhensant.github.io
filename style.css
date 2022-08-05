@@ -44,6 +44,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	gap: 20px;
 
 	border-radius: 6px;
@@ -56,18 +57,18 @@ body {
 .card {
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
+
 	gap: 15px;
 }
 
 .card-title {
 	margin: 0;
-	font-family: 'Plus Jakarta Sans';
 	font-weight: 900;
 	color: var(--purple-600);
 }
 
 .card-content {
-	font-family: 'Plus Jakarta Sans';
 	color: var(--purple-900);
 }
 
@@ -78,7 +79,6 @@ body {
 }
 
 .card-select {
-	font-family: 'Plus Jakarta Sans';
 	color: var(--purple-900);
 
 	display: flex;
@@ -105,7 +105,6 @@ body {
 }
 
 .item-title {
-	font-family: 'Plus Jakarta Sans';
 	font-weight: 900;
 	margin: 0;
 	transition: background 0.2 ease;
@@ -142,14 +141,12 @@ a.link {
 }
 
 .item-text {
-	font-family: 'Plus Jakarta Sans';
 	font-weight: 300;
 	margin: 0;
 	font-style: italic;
 }
 
 .card-text {
-	font-family: 'Plus Jakarta Sans';
 	font-weight: 300;
 	margin: 0;
 	font-size: 15px;
@@ -160,6 +157,7 @@ a.link {
 	border-radius: 6px;
 	background-color: var(--purple-200);
 	border: solid 2px var(--purple-600);
+	color: var(--purple-600);
 }
 
 .highlight * {
@@ -196,7 +194,6 @@ a.link {
 
 .text {
 	color: var(--purple-900);
-	font-family: 'Plus Jakarta Sans';
 	font-weight: normal;
 	font-size: 40px;
 }
@@ -209,13 +206,12 @@ a.link {
 }
 
 .picture {
-	width: 300px;
+	width: 280px;
 	border-radius: 170px;
 	border: solid 10px var(--purple-200);
 }
 
 .action {
-	font-family: 'Plus Jakarta Sans';
 	font-weight: 700;
 	font-size: 18px;
 	background-color: var(--purple-200);
@@ -357,6 +353,7 @@ a.link {
 }
 
 * {
+	font-family: 'Plus Jakarta Sans';
 	cursor: none;
 }
 
@@ -366,13 +363,17 @@ a.link {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width:912px) {
 	.cursor {
 		visibility: hidden;
 	}
 
 	* {
 		cursor: default;
+	}
+
+	body {
+		margin: 2em;
 	}
 }
 
