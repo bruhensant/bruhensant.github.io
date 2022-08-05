@@ -25,6 +25,21 @@ function emoji() {
 	emojiContainer.style.marginBottom = '-3%';
 }
 
+
+function eyeball() {
+	document.querySelector("html").addEventListener("mousemove", eyeball);
+
+	const eye = document.querySelectorAll(".eye");
+	eye.forEach(function (eye) {
+		let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+		let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+
+		let radian = Math.atan2(event.pageX - x, event.pageY - y);
+		let rotate = radian * (180 / Math.PI) * -1 + 270;
+		eye.style.transform = "rotate(" + rotate + "deg)";
+	});
+}
+
 function cursor() {
 	const cursor = document.querySelector('.cursor');
 	document.addEventListener('mousemove', (e) => {
@@ -46,15 +61,18 @@ function hover() {
 
 	cursor.opacity = '0.5';
 	cursor.transform = 'scale(3)';
+
 }
 
 function leave() {
 	const cursor = document.querySelector('.cursor');
 
+
 	cursor.innerHTML = ' ';
 	cursor.style.transform = 'scale(1)';
 	cursor.style.opacity = '0.8';
 	cursor.style.backgroundColor = '#581C87';
+
 }
 
 function activate() {

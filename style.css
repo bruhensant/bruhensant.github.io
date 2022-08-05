@@ -33,7 +33,35 @@ html {
 
 }
 
+.eye {
+	width: 100px;
+	height: 100px;
+	display: block;
+	background-color: #fff;
+	margin: 0 20px;
+	border-radius: 50%;
+	background-color: var(--purple-900);
+}
+
+.eye::before {
+	content: "";
+	top: 50%;
+	left: 35px;
+	transform: translate(-50%, -50%);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: var(--purple-50);
+
+	position: absolute;
+	box-sizing: border-box;
+}
+
 .error-text {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
 	font-size: 128px;
 	color: var(--purple-900);
 	margin: 0;
@@ -246,6 +274,7 @@ a.link {
 	align-items: center;
 	gap: 10px;
 	flex-wrap: nowrap;
+	width: fit-content;
 
 	transition: box-shadow .4s ease;
 

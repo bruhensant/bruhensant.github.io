@@ -19,16 +19,31 @@
 
 </head>
 
-<body class="app" onload="cursor_error()">
+<body class="app" onload="cursor_error(), eyeball()">
 
 	<div class="cursor_error"></div>
 
 	<div class="div-error">
 
-		<span class="error-text">404</span>
+		<span class="error-text">4
+
+			<div class="eye">
+			</div>
+
+			4
+		</span>
+
+
 
 	</div>
+	<h4 class="text">Parece que você se perdeu...</h4>
 
+	<button onmouseenter="hover()" onmouseleave="leave()" onmousedown="activate()"
+		onClick="location.href='/index.html';" class="action">
+		<span class="iconify" data-icon="tabler:arrow-wave-left-down"></span>
+
+		VAMOS TENTAR NOVAMENTE?
+	</button>
 </body>
 
 </html>
