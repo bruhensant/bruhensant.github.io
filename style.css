@@ -439,14 +439,13 @@ a.link {
 	cursor: none;
 }
 
-@media screen and (max-width: 600px) {
-	.cursor {
-		visibility: hidden;
-	}
-}
 
 @media screen and (max-width:912px) {
 	.cursor {
+		visibility: hidden;
+	}
+
+	.cursor_error {
 		visibility: hidden;
 	}
 
@@ -457,18 +456,50 @@ a.link {
 	body {
 		margin: 2em;
 	}
+
+	.action:hover {
+		cursor: pointer;
+	}
+
+	.card-select:hover {
+		cursor: pointer;
+	}
+
+	.card-select *:hover {
+		cursor: pointer;
+	}
+
+	a.link:hover {
+		cursor: pointer;
+	}
 }
 
 @media screen and (min-width: 1921px) {
-	* {
-		cursor: default;
-	}
-
 	.cursor {
 		visibility: hidden;
 	}
 
+	.cursor_error {
+		visibility: hidden;
+	}
+
+	* {
+		cursor: default;
+	}
+
+	body {
+		margin: 2em;
+	}
+
 	.action:hover {
+		cursor: pointer;
+	}
+
+	.card-select:hover {
+		cursor: pointer;
+	}
+
+	.card-select *:hover {
 		cursor: pointer;
 	}
 
