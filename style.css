@@ -152,6 +152,13 @@ a.link {
 	font-style: italic;
 }
 
+.card-text {
+	font-family: 'Plus Jakarta Sans';
+	font-weight: 300;
+	margin: 0;
+	font-size: 15px;
+}
+
 .highlight {
 	padding: 15px;
 	border-radius: 6px;

@@ -56,6 +56,7 @@ function activate() {
 }
 
 function handshake() {
+
 	const cursor = document.querySelector('.cursor');
 
 	cursor.style.transform = 'scale(2)';
@@ -67,19 +68,19 @@ function handshake() {
 function recruiter() {
 	const cursor = document.querySelector('.cursor');
 
-	cursor.style.transform = 'scale(2)';
+	cursor.style.transform = 'scale(3)';
 	cursor.style.backgroundColor = '#D8B4FE';
 	cursor.style.opacity = '1';
 	cursor.innerHTML = '👨‍🚀';
-	cursor.style.fontSize = '8px';
+	cursor.style.fontSize = '7px';
 }
 
 function designeer() {
 	const cursor = document.querySelector('.cursor');
 
-	cursor.style.transform = 'scale(2)';
+	cursor.style.transform = 'scale(3)';
 	cursor.style.backgroundColor = '#D8B4FE';
 	cursor.style.opacity = '1';
 	cursor.innerHTML = '👀';
-	cursor.style.fontSize = '8px';
+	cursor.style.fontSize = '7px';
 }
