@@ -31,8 +31,16 @@ function cursor() {
 		cursor.style.left = e.clientX + 'px';
 		cursor.style.top = e.clientY + 'px';
 	});
-
 }
+
+function cursor_error() {
+	const cursor = document.querySelector('.cursor_error');
+	document.addEventListener('mousemove', (e) => {
+		cursor.style.left = e.clientX + 'px';
+		cursor.style.top = e.clientY + 'px';
+	});
+}
+
 function hover() {
 	const cursor = document.querySelector('.cursor').style;
 

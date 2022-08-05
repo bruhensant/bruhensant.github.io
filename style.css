@@ -22,13 +22,29 @@ html {
 	background-image: url("./src/waves.svg");
 }
 
+.error {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: var(--purple-50);
+	background-image: url("./src/noise.svg");
+	font-size: 128px;
+}
+
+.div-error {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
 
 	background-repeat: repeat;
 
-	margin: 3em 7em 3em 7em;
+	margin: 3em 7em;
 	gap: 2em;
 }
 
@@ -256,28 +272,40 @@ a.link {
 	transition: background-color .2s ease;
 }
 
-/* ? EXPERIMENTAL */
-
 /* Scrollbar */
-/* Largura */
+/* Largura da Scrollbar */
 ::-webkit-scrollbar {
 	width: 10px;
 }
 
-/* Fundo */
+/* Fundo da Scrollbar */
 ::-webkit-scrollbar-track {
 	background: var(--purple-100);
 }
 
-/* Puxador */
+/* Puxador da Scrollbar */
 ::-webkit-scrollbar-thumb {
 	background: var(--purple-300);
 	border-radius: 50px;
 }
 
-/* Hover do Puxador */
+/* Hover do Puxador da Scrollbar */
 ::-webkit-scrollbar-thumb:hover {
 	background: var(--purple-400);
+}
+
+
+/* Mudar a cor da Seleção de Texto */
+::selection {
+	color: var(--purple-50);
+	background: var(--purple-900);
+}
+
+/* Mudar a cor da Seleção de Texto */
+::-moz-selection {
+	/* Para Firefox */
+	color: var(--purple-50);
+	background: var(--purple-900);
 }
 
 .emoji:hover {
@@ -347,6 +375,24 @@ a.link {
 	background-color: var(--purple-900);
 	transition: all 0.05s;
 	pointer-events: none;
+
+	opacity: 0.8;
+	z-index: 1;
+}
+
+.cursor_error {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+
+	position: fixed;
+	width: 20px;
+	height: 20px;
+	background-color: var(--purple-900);
+	transition: all 0.05s;
+	pointer-events: none;
+	transform: rotate(45deg);
 
 	opacity: 0.8;
 	z-index: 1;
