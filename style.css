@@ -73,6 +73,11 @@ html {
 	justify-content: center;
 }
 
+.div-buttons-error {
+	display: flex;
+	justify-content: space-around;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
