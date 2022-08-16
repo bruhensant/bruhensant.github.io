@@ -110,3 +110,14 @@ function designeer() {
 	cursor.innerHTML = '👀';
 	cursor.style.fontSize = '7px';
 }
+
+function date() {
+
+	const date = document.querySelector('.date');
+
+
+	let data = new Date();
+	var data_formatada = data.toLocaleDateString();
+
+	date.innerHTML = data_formatada;
+}
