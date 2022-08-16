@@ -38,6 +38,7 @@ function displayDate() {
 	const timeNow = new Date();
 
 	const data = document.querySelector('.week');
+	const mes = document.querySelector('.month');
 
 	let weekDay = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"]
 	let today = weekDay[timeNow.getDay()];
@@ -47,4 +48,5 @@ function displayDate() {
 
 	data.innerHTML = today;
 
+	mes.innerHTML = months;
 }
