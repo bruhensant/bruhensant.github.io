@@ -19,16 +19,12 @@ function displayTime() {
 
 	if (hoursOfDay === 0) {
 		period = "AM";
-
 	}
 
 	hoursOfDay = hoursOfDay < 10 ? "0" + hoursOfDay : hoursOfDay;
 	minutes = minutes < 10 ? "0" + minutes : minutes;
 
 	let time = hoursOfDay + ":" + minutes + " "; // + period;
-
-
-	console.log(time + " ");
 
 	tempo.innerHTML = time;
 }
