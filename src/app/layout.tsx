@@ -24,7 +24,9 @@ export default function RootLayout({
 			<body className={`${jakartaSans.className} antialiased  bg-light dark:bg-darker text-darker dark:text-light flex flex-col h-screen p-10 transition-all`}>
 				<LanguageProvider>
 					<Header />
-					{children}
+					<main className="p-2">
+						{children}
+					</main>
 					<Footer />
 				</LanguageProvider>
 			</body>

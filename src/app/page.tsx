@@ -1,7 +1,3 @@
 export default function Home() {
-	return (
-		<div className="p-2 text-dark">
-		aqui vai o conteudo
-		</div>
-	);
+	return <div className="text-dark">aqui vai o conteudo</div>;
 }
