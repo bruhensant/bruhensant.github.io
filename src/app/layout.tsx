@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header/header-component";
 import Footer from "@/components/footer/footer-component";
 import { LanguageProvider } from "@/contexts/language-context";
+import { NavigationProvider } from "@/contexts/navigation-context";
 
 const jakartaSans = Plus_Jakarta_Sans({
 	subsets: ["latin"],
@@ -21,13 +22,15 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="pt-BR">
-			<body className={`${jakartaSans.className} antialiased  bg-light dark:bg-darker text-darker dark:text-light flex flex-col h-screen p-10 transition-all`}>
+			<body className={`${jakartaSans.className} antialiased gap-80 bg-light dark:bg-darker text-darker dark:text-light flex flex-col h-screen p-10 transition-all`}>
 				<LanguageProvider>
-					<Header />
-					<main className="p-2">
-						{children}
-					</main>
-					<Footer />
+					<NavigationProvider>
+						<Header />
+						<main className="p-2">
+							{children}
+						</main>
+						<Footer />
+					</NavigationProvider>
 				</LanguageProvider>
 			</body>
 		</html>
