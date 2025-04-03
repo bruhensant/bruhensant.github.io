@@ -20,9 +20,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="pt-BR">
-			<body className={`${jakartaSans.className} antialiased p-10`}>
+			<body className={`${jakartaSans.className} antialiased  bg-light dark:bg-darker text-darker dark:text-light flex flex-col h-screen`}>
 			<Header />
 				{children}
+
 			<Footer />
 			</body>
 		</html>
