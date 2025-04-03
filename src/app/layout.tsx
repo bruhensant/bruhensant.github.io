@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/header-component";
 import Footer from "@/components/footer/footer-component";
+import { LanguageProvider } from "@/contexts/language-context";
 
 const jakartaSans = Plus_Jakarta_Sans({
 	subsets: ["latin"],
@@ -20,11 +21,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="pt-BR">
-			<body className={`${jakartaSans.className} antialiased  bg-light dark:bg-darker text-darker dark:text-light flex flex-col h-screen`}>
-			<Header />
-				{children}
-
-			<Footer />
+			<body className={`${jakartaSans.className} antialiased  bg-light dark:bg-darker text-darker dark:text-light flex flex-col h-screen p-10 transition-all`}>
+				<LanguageProvider>
+					<Header />
+					{children}
+					<Footer />
+				</LanguageProvider>
 			</body>
 		</html>
 	);

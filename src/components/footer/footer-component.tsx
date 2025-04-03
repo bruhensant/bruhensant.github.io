@@ -1,10 +1,18 @@
-import TextButton from "../text-button/text-button-component";
+'use client'
+import { common } from "../../../public/i18n/common";
+import TextLinkButton from "../text-link-button/text-link-button-component";
+import { useLanguage } from "@/contexts/language-context";
+
 
 export default function Footer() {
+	const { language } = useLanguage();
+
 	return (
-		<div className="grid grid-cols-4 text-dark mt-auto">
-			<TextButton text="Home" link="/" />
-			<TextButton text="About" link="/about" />
+		<div className="grid grid-cols-4 mt-auto p-4">
+			<TextLinkButton text="github" link="https://github.com/bruhensant	" />
+			<TextLinkButton text="linkedin" link="https://www.linkedin.com/in/bruhensant/" />
+			<TextLinkButton text="behance" link="https://www.behance.net/bruhensant" />
+			<TextLinkButton text={`${common[language].resume}.pdf`} link="/resume.pdf" />
 		</div>
 	)
 }
