@@ -8,7 +8,7 @@ export default function Home() {
 
 	return (
 		<div className="text-dark flex gap-2 animate-pulse">
-			<span className="italic">{common[language].under_development}... </span>
+			<span>{common[language].under_development}... </span>
 			<span>🚧</span>
 		</div>
 	);
