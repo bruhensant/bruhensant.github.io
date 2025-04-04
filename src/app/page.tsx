@@ -4,12 +4,9 @@ import ProjectCardComponent from "@/components/project-card/project-card-compone
 import { common } from "../../public/i18n/common";
 import { useLanguage } from "@/contexts/language-context";
 
-type ProjectCardType = 'grid' | 'wip'
 
 export default function Home() {
 	const { language } = useLanguage();
-
-	const type: ProjectCardType = 'wip';
 
 	const projects = [
 		{
@@ -38,22 +35,19 @@ export default function Home() {
 			description: 'Description 5',
 		},
 	]
-	if (type === 'grid') {
-		return (
-			<div className="grid grid-cols-3 gap-8">
-				{projects.map((project) => (
-					<ProjectCardComponent key={project.id} title={project.title} />
-				))}
-			</div>
-		)
-	}
 
-	if (type === 'wip') {
+		// return (
+		// 	<div className="grid grid-cols-3 gap-8">
+		// 		{projects.map((project) => (
+		// 			<ProjectCardComponent key={project.id} title={project.title} />
+		// 		))}
+		// 	</div>
+		// )
+
 		return (
 			<div className="text-dark flex gap-2 animate-pulse">
 				<span>{common[language].under_development}... </span>
 				<span>🚧</span>
 			</div>
 		)
-	}
 }
