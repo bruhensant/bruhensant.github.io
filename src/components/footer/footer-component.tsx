@@ -8,11 +8,11 @@ export default function Footer() {
 	const { language } = useLanguage();
 
 	return (
-		<div className="grid grid-cols-4 mt-auto p-4">
+		<footer className="flex justify-between pb-30">
 			<TextLinkButton text="github" link="https://github.com/bruhensant	" />
 			<TextLinkButton text="linkedin" link="https://www.linkedin.com/in/bruhensant/" />
 			<TextLinkButton text="behance" link="https://www.behance.net/bruhensant" />
 			<TextLinkButton text={`${common[language].resume}.pdf`} link="/resume.pdf" />
-		</div>
+		</footer>
 	)
 }

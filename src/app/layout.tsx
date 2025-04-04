@@ -22,11 +22,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="pt-BR">
-			<body className={`${jakartaSans.className} antialiased gap-80 bg-light dark:bg-darker text-darker dark:text-light flex flex-col h-screen p-10 transition-all`}>
+			<body className={`${jakartaSans.className} antialiased gap-80 bg-light dark:bg-darker text-darker dark:text-light flex flex-col h-screen p-30 transition-all`}>
 				<LanguageProvider>
 					<NavigationProvider>
 						<Header />
-						<main className="p-2">
+						<main className="">
 							{children}
 						</main>
 						<Footer />
