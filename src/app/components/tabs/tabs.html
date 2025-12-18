@@ -1,7 +1,7 @@
 <div class="flex w-full border">
 	<div class="flex w-full gap-8">
 		@for(tab of tabs; track tab.id){
-		<a [routerLink]="'/'+tab.id"> {{tab.label}} </a>
+		<a class="font-grotesk uppercase" [routerLink]="'/'+tab.id"> {{tab.label}} </a>
 		}
 	</div>
 </div>
