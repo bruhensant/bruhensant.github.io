@@ -1,4 +1,4 @@
-<div class="flex flex-col gap-6 w-full p-10 border">
+<div class="flex flex-col gap-6 w-full p-10 border rounded-sm">
 	<!-- Header -->
 	<header></header>
 
@@ -6,5 +6,8 @@
 	<tabs></tabs>
 
 	<!-- Content -->
-	<router-outlet></router-outlet>
+	<div class="border rounded-sm">
+		<router-outlet></router-outlet>
+	</div>
 </div>
+`
