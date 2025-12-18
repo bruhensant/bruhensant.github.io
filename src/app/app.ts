@@ -1,12 +1,11 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, signal } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+	selector: "app-root",
+	imports: [RouterOutlet],
+	templateUrl: "./app.html",
 })
 export class App {
-  protected readonly title = signal('bruhensant.github.io');
+	protected readonly title = signal("bruhensant.github.io");
 }
