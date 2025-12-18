@@ -11,7 +11,8 @@
 	"formatter": {
 		"enabled": true,
 		"indentStyle": "tab",
-		"useEditorconfig": true
+		"useEditorconfig": true,
+		"indentWidth": 4
 	},
 	"linter": {
 		"enabled": true,
