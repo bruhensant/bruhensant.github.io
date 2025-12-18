@@ -10,7 +10,8 @@
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
-					"style": "css"
+					"style": "css",
+					"prefix": ""
 				}
 			},
 			"root": "",
