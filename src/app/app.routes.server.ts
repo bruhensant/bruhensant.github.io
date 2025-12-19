@@ -1,4 +1,5 @@
 import { RenderMode, type ServerRoute } from '@angular/ssr';
+import { projects } from 'public/projects';
 
 export const serverRoutes: ServerRoute[] = [
 	{
@@ -9,7 +10,9 @@ export const serverRoutes: ServerRoute[] = [
 		path: 'projects/:projectId',
 		renderMode: RenderMode.Prerender,
 		getPrerenderParams: async () => {
-			return [{ projectId: '1' }, { projectId: '2' }, { projectId: '3' }, { projectId: '4' }];
+			return projects.map((project) => {
+				return { projectId: project.id };
+			});
 		},
 	},
 ];

@@ -1,4 +1,6 @@
-export const projects = [
+import type { Project } from '@/app/types/types';
+
+export const projects: Array<Project> = [
 	{
 		id: '1',
 		title: 'Number One',
