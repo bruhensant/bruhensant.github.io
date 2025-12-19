@@ -11,7 +11,14 @@
 	"formatter": {
 		"enabled": true,
 		"indentStyle": "tab",
-		"useEditorconfig": true
+		"useEditorconfig": true,
+		"indentWidth": 4,
+		"lineWidth": 80
+	},
+	"html": {
+		"parser": {
+			"interpolation": true
+		}
 	},
 	"linter": {
 		"enabled": true,
@@ -21,7 +28,7 @@
 	},
 	"javascript": {
 		"formatter": {
-			"quoteStyle": "double"
+			"quoteStyle": "single"
 		}
 	},
 	"assist": {

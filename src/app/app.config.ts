@@ -2,19 +2,19 @@ import {
 	type ApplicationConfig,
 	provideBrowserGlobalErrorListeners,
 	provideZonelessChangeDetection,
-} from "@angular/core";
-import { provideRouter } from "@angular/router";
+} from '@angular/core';
+import { provideRouter, withViewTransitions } from '@angular/router';
 import {
 	provideClientHydration,
 	withEventReplay,
-} from "@angular/platform-browser";
-import { routes } from "./app.routes";
+} from '@angular/platform-browser';
+import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
 	providers: [
 		provideBrowserGlobalErrorListeners(),
 		provideZonelessChangeDetection(),
-		provideRouter(routes),
+		provideRouter(routes, withViewTransitions()),
 		provideClientHydration(withEventReplay()),
 	],
 };
