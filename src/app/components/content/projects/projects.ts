@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { BaseCard } from '../cards/base-card/base-card';
-import type { Project } from '@/app/types/types';
-import { projects } from '../../../../../public/projects';
+import type { Project } from '@/app/shared/types/types';
+import { DataService } from '@/app/shared/data/data.service';
 
 @Component({
 	selector: 'projects',
@@ -9,5 +9,5 @@ import { projects } from '../../../../../public/projects';
 	templateUrl: './projects.html',
 })
 export class Projects {
-	projects: Array<Project> = projects;
+	projects: Array<Project> = inject(DataService).getAllProjects();
 }

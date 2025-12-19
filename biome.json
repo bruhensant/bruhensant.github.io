@@ -12,7 +12,8 @@
 		"enabled": true,
 		"indentStyle": "tab",
 		"useEditorconfig": true,
-		"indentWidth": 4
+		"indentWidth": 4,
+		"lineWidth": 80
 	},
 	"html": {
 		"parser": {

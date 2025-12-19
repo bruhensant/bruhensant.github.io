@@ -1,4 +1,4 @@
-import type { Project } from '@/app/types/types';
+import type { Project } from '@/app/shared/types/types';
 
 export const projects: Array<Project> = [
 	{

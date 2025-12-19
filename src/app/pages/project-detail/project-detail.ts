@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   templateUrl: './project-detail.html',
 })
 export class ProjectDetail {
-
+	
 }

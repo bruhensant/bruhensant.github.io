@@ -1,5 +1,6 @@
 import { RenderMode, type ServerRoute } from '@angular/ssr';
-import { projects } from 'public/projects';
+import { DataService } from './shared/data/data.service';
+import { inject } from '@angular/core';
 
 export const serverRoutes: ServerRoute[] = [
 	{
@@ -10,9 +11,8 @@ export const serverRoutes: ServerRoute[] = [
 		path: 'projects/:projectId',
 		renderMode: RenderMode.Prerender,
 		getPrerenderParams: async () => {
-			return projects.map((project) => {
-				return { projectId: project.id };
-			});
+			const projectsService = inject(DataService);
+			return projectsService.getPreRenderProjects();
 		},
 	},
 ];
