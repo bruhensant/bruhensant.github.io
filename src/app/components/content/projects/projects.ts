@@ -1,11 +1,11 @@
 import { Component, inject } from '@angular/core';
-import { BaseCard } from '../cards/base-card/base-card';
+import { ProjectCard } from '../cards/project-card/project-card';
 import type { Project } from '@/app/shared/types/types';
 import { DataService } from '@/app/shared/data/data.service';
 
 @Component({
 	selector: 'projects',
-	imports: [BaseCard],
+	imports: [ProjectCard],
 	templateUrl: './projects.html',
 })
 export class Projects {

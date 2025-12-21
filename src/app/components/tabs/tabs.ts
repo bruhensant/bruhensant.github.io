@@ -8,15 +8,15 @@ import { Router } from '@angular/router';
 })
 export class Tabs {
 	router = inject(Router);
-	activeTab = signal<string>('projects');
+	activeTab = signal<'projects'| 'experiences'| 'skills'>('projects');
 
-	tabs: Array<{ id: string; label: string }> = [
+	tabs: Array<{ id: 'projects'| 'experiences'| 'skills'; label: string }> = [
 		{ id: 'projects', label: 'Projects' },
 		{ id: 'skills', label: 'Skills' },
-		{ id: 'experience', label: 'Experience' },
+		{ id: 'experiences', label: 'Experience' },
 	];
 
-	navigate(id: string): void {
+	navigate(id: 'projects'| 'experiences'| 'skills'): void {
 		this.activeTab.set(id);
 		this.router.navigate([id]);
 	}

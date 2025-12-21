@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { DataService } from '@/app/shared/data/data.service';
+import type { Skill } from '@/app/shared/types/types';
+import { Component, inject } from '@angular/core';
 
 @Component({
 	selector: 'skills',
@@ -6,28 +8,5 @@ import { Component } from '@angular/core';
 	templateUrl: './skills.html',
 })
 export class Skills {
-	skills: Array<string> = [
-		'angular',
-		'typescript',
-		'javascript',
-		'pyhton',
-		'ngrx',
-		'rxjs',
-		'ux/ui',
-		'css',
-		'html',
-		'git',
-		'react',
-		'java',
-		'jest',
-		'karma',
-		'jasmine',
-		'next.js',
-		'svelte',
-		'figma',
-		'project management',
-		'team leadership',
-		'technical leadership',
-		'design',
-	];
+	skills: Array<Skill> = inject(DataService).getAllSkills();
 }
