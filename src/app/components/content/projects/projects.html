@@ -1,6 +1,5 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">
-	
-@for(project of projects; track project.id){
-<base-card [project]="project"></base-card>
-}
+	@for(project of projects; track project.id){
+	<project-card [project]="project"></project-card>
+	}
 </div>

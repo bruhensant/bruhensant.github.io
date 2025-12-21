@@ -3,5 +3,35 @@
 
 @theme {
   --font-sans: "Inter", sans-serif;
-  --font-grotesk: "Space Grotesk", sans-serif;
+  --font-grotesk: "Space Grotesk", monospace;
+}
+
+/* Background Dot Matrix Pattern */
+:root {
+  --pattern-dot-size: 1px;
+  --pattern-dot-space: 24px;
+  --pattern-dot-color: #e4e4e7;
+  --pattern-bg-color: #ffffff;
+}
+
+body {
+  background-color: var(--pattern-bg-color);
+  background-image: radial-gradient(var(--pattern-dot-color) var(--pattern-dot-size), transparent var(--pattern-dot-size));
+  background-size: var(--pattern-dot-space) var(--pattern-dot-space);
+  background-attachment: fixed;
+  isolation: isolate;
+}
+
+@media (hover: hover) {
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: radial-gradient(#3b82f6 var(--pattern-dot-size), transparent var(--pattern-dot-size));
+    background-size: var(--pattern-dot-space) var(--pattern-dot-space);
+    -webkit-mask-image: radial-gradient(circle 200px at var(--cursor-x, 50%) var(--cursor-y, 50%), black, transparent);
+    mask-image: radial-gradient(circle 200px at var(--cursor-x, 50%) var(--cursor-y, 50%), black, transparent);
+  }
 }

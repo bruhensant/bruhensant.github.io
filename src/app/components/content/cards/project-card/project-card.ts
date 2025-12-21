@@ -2,10 +2,10 @@ import type { Project } from '@/app/shared/types/types';
 import { Component, input } from '@angular/core';
 
 @Component({
-	selector: 'base-card',
+	selector: 'project-card',
 	imports: [],
-	templateUrl: './base-card.html',
+	templateUrl: './project-card.html',
 })
-export class BaseCard {
-	project = input<Project>();
+export class ProjectCard {
+	project = input.required<Project>();
 }

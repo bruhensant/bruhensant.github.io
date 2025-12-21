@@ -1,5 +1,17 @@
 <div class="flex flex-wrap gap-4 p-4">
 	@for(skill of skills; track skill){
-	<span class="px-1.5 py-1 border flex leading-none rounded-sm font-grotesk"> {{skill}} </span>
+	<span
+		class="px-1.5 group py-1 border border-zinc-300 hover:border-black hover:bg-zinc-50 transition-colors ease-in flex leading-none rounded-sm text-sm font-grotesk"
+		[class.cursor-default]="!skill.url"
+		[class.hover:border-zinc-300]="!skill.url"
+		[class.bg-none]="!skill.url"
+	>
+		@if(skill.url) {
+
+		<a [href]="skill?.url"> {{skill.name}} </a>
+		} @else {
+		<span> {{skill.name}} </span>
+		}
+	</span>
 	}
 </div>

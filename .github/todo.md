@@ -1,5 +1,5 @@
 add font martian mono
-tabs
+x tabs
 content
 header
 theme
