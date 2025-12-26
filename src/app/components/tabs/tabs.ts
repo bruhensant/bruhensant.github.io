@@ -16,7 +16,6 @@ export class Tabs {
 	readonly tabs: TabItem[] = [
 		{ id: 'projects', label: 'Projects' },
 		{ id: 'experiences', label: 'Experience' },
-		{ id: 'skills', label: 'Skills' },
-		{ id: 'about', label: 'About me'}
+		{ id: 'skills', label: 'Skills' }
 	];
 }

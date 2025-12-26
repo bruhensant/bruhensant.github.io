@@ -236,4 +236,40 @@ export const skills: Array<Skill> = [
 		name: 'SASS / SCSS',
 		url: 'https://sass-lang.com',
 	},
+	{ id: 'jsdoc', name: 'JSDoc', url: 'https://jsdoc.app' },
+	{ id: 'bpmn', name: 'BPMN', url: 'https://bpmn.io' },
+	{ id: 'storybook', name: 'Storybook', url: 'https://storybook.js.org' },
+	{ id: '', name: 'Chromatic', url: 'https://www.chromatic.com' },
+	{
+		id: 'confluece',
+		name: 'Confluence',
+		url: 'https://www.atlassian.com/software/confluence',
+	},
+	{ id: 'openai-api', name: 'OpenAI API', url: 'https://openai.com/api/' },
+	{ id: '', name: 'Firebase', url: 'https://firebase.google.com' },
+	{
+		id: 'google-maps-api',
+		name: 'Google Maps API',
+		url: 'https://developers.google.com/maps',
+	},
+	{
+		id: 'jsppd',
+		name: 'jsPDF',
+		url: 'https://artskydj.github.io/jsPDF/docs/jsPDF.html',
+	},
+	{
+		id: 'springboot',
+		name: 'SpringBoot',
+		url: 'https://spring.io/projects/spring-boot',
+	},
+	{ id: 'jsf', name: 'JSF', url: 'https://jakarta.ee/specifications/faces/' },
+	{
+		id: 'wcag-standards',
+		name: 'WCAG Standards',
+		url: 'https://www.w3.org/WAI/standards-guidelines/wcag/',
+	},
+	{ id: 'sketch', name: 'Sketch', url: 'https://www.sketch.com' },
+	{ id: 'camunda', name: 'Camunda', url: 'https://camunda.com' },
+	{ id: 'activiti', name: 'Activiti', url: 'https://www.activiti.org' },
+	
 ];
