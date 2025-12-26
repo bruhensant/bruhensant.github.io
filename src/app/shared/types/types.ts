@@ -30,3 +30,8 @@ export type Skill = Base & {
 	name: string;
 	url?: string;
 };
+
+export type TabItem = {
+	id: 'projects' | 'experiences' | 'skills' | 'about';
+	label: string;
+};

@@ -266,5 +266,4 @@ export const skills: Array<Skill> = [
 	{ id: 'sketch', name: 'Sketch', url: 'https://www.sketch.com' },
 	{ id: 'camunda', name: 'Camunda', url: 'https://camunda.com' },
 	{ id: 'activiti', name: 'Activiti', url: 'https://www.activiti.org' },
-	
 ];
