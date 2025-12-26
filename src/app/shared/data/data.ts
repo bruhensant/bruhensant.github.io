@@ -1,43 +1,122 @@
 import type { Experience, Project, Skill } from '@/app/shared/types/types';
 
-export const projects: Array<Project> = [
-	{
-		id: '1',
-		title: 'Number One',
-		description: 'The first project lorem ipsum dolor sit amet',
-	},
-	{
-		id: '2',
-		title: 'Number Two',
-		description: 'The second project lorem ipsum dolor sit amet',
-	},
-	{
-		id: '3',
-		title: 'Number Three',
-		description: 'The third project lorem ipsum dolor sit amet',
-	},
-	{
-		id: '4',
-		title: 'Number Four',
-		description: 'The fourth project lorem ipsum dolor sit amet',
-	},
-];
+export const projects: Array<Project> = [];
 
 export const experiences: Array<Experience> = [
 	{
-		id: '1',
-		role: 'Role 1',
-		company: 'Company 1',
-		start: new Date(),
-		description: 'Description for role 1 lorem ipsum dolor sit amet',
+		id: 'exp-1',
+		role: 'Frontend Lead Developer',
+		company: {
+			id: 'c-1',
+			name: 'Automining',
+			webpage: 'https://www.automining.com.br/',
+		},
+		start: new Date('2024-06-01'),
+		description:
+			'Serving as a technical reference and mentor in Frontend and Design projects, designing systems, architectures, and design patterns.',
+		feats: [
+			{
+				id: 'exp-1-1',
+				content:
+					'Serving as a technical reference and mentor in Frontend and Design projects, designing systems, architectures, and design patterns.',
+			},
+			{
+				id: 'exp-1-2',
+				content:
+					'Modeled processes and created technical documentation for users and developers (JSDoc, BPMN, Storybook, Chromatic, Confluence).',
+			},
+			{
+				id: 'exp-1-3',
+				content:
+					'Developed multiple platforms for business and industry management and automation using Angular and TailwindCSS, leveraging process engines (Camunda, Activiti) with integrations to private ERPs and Enterprise AI Assistants (OpenAI API).',
+			},
+		],
 	},
 	{
-		id: '2',
-		role: 'Role 2',
-		company: 'Company 2',
-		start: new Date(),
-		end: new Date(),
-		description: 'Description for role 2 lorem ipsum dolor sit amet',
+		id: 'exp-2',
+		role: 'Frontend Developer',
+		company: {
+			id: 'c-2',
+			name: 'Automining',
+			webpage: 'https://www.automining.com.br/',
+		},
+		start: new Date('2022-09-01'),
+		end: new Date('2024-06-01'),
+		description:
+			'Developed responsive web systems using Angular and SCSS, featuring reactive dashboards and interactive maps.',
+		feats: [
+			{
+				id: 'exp-2-1',
+				content:
+					'Developed responsive web systems using Angular and SCSS, featuring reactive dashboards (ApexJS), interactive maps (Google Maps API), and report generation (jsPDF).',
+			},
+			{
+				id: 'exp-2-2',
+				content:
+					'Structured unit and integration tests with Jest, Karma, and Jasmine.',
+			},
+			{
+				id: 'exp-2-3',
+				content:
+					'Managed Authorization and Authentication with social login platforms (Keycloak, Microsoft, Firebase).',
+			},
+		],
+	},
+	{
+		id: 'exp-3',
+		role: 'R&D Assistant',
+		company: {
+			id: 'c-3',
+			name: 'Mineração Vale Verde',
+			webpage: 'https://vale-verde.com/',
+		},
+		start: new Date('2021-10-01'),
+		end: new Date('2022-09-01'),
+		description:
+			'Conducted market analysis and resolved problems based on process analysis and modeling.',
+		feats: [
+			{
+				id: 'exp-3-1',
+				content:
+					'Conducted market analysis for business opportunity discovery processes (BPMN).',
+			},
+			{
+				id: 'exp-3-2',
+				content:
+					'Resolved problems based on process analysis, modeling, and updates (Camunda).',
+			},
+			{
+				id: 'exp-3-3',
+				content:
+					'Developed internal web tools for departmental integration (Java, SpringBoot, JSF).',
+			},
+		],
+	},
+	{
+		id: 'exp-4',
+		role: 'UX/UI Designer',
+		company: { id: 'c-4', name: "Hephaesthus' Lab" },
+		start: new Date('2020-01-01'),
+		end: new Date('2020-12-01'),
+		description:
+			'Analyzed usability and accessibility of web platforms and developed design systems.',
+		feats: [
+			{
+				id: 'exp-4-1',
+				content:
+					'Analyzed usability and accessibility of web platforms (WCAG Standards).',
+			},
+			{
+				id: 'exp-4-2',
+				content:
+					'Developed design systems for responsive applications (Figma, Sketch).',
+			},
+			{
+				id: 'exp-4-3',
+				content:
+					'Performed experimental prototyping for proof-of-concept mockups and developed short-short-term value MVPs (React)',
+			},
+		],
 	},
 ];
 

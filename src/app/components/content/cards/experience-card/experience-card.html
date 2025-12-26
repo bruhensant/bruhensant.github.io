@@ -1,9 +1,12 @@
 <div class="p-4 gap-2 flex flex-col rounded-sm border border-zinc-300">
-	<span class="font-grotesk text-sm"> {{experience().role}} </span>
-	<div class="border-t -mx-4 border-zinc-300"></div>
+	<div class="flex justify-between">
+		<span class="font-grotesk text-sm"> {{experience().role}} </span>
+		<span class="font-sans text-sm text-zinc-500"> {{experience().company.name}}</span>
+	</div>
+
+	<div class="border-t -mx-4 my-1 border-zinc-300"></div>
 	<div class="flex justify-between items-center">
-		<span class="font-sans text-sm text-zinc-500"> {{experience().company}}</span>
-		<div class="flex gap-2 *:text-zinc-500">
+		<div class="flex gap-1 *:text-zinc-500 *:font-grotesk">
 			<span class="text-xs">{{experience().start | date:'MMM yyyy'}}</span>
 			@if(experience().end){
 			<span class="text-xs"> - {{experience().end | date:'MMM yyyy'}}</span>
@@ -12,5 +15,11 @@
 			}
 		</div>
 	</div>
-	<div class="text-sm font-sans">{{experience().description}}</div>
+
+	<ol class="gap-2 flex flex-col">
+		@for(feat of experience().feats; track feat.id){
+		<li class="text-xs font-sans">- {{feat.content}}</li>
+
+		}
+	</ol>
 </div>

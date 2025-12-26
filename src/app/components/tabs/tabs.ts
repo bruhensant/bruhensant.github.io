@@ -1,23 +1,22 @@
-import { Component, inject, signal } from '@angular/core';
-import { Router } from '@angular/router';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+
+type TabItem = {
+	id: 'projects' | 'experiences' | 'skills' | 'about';
+	label: string;
+};
 
 @Component({
 	selector: 'tabs',
-	imports: [],
+	imports: [RouterLink, RouterLinkActive],
 	templateUrl: './tabs.html',
+	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Tabs {
-	router = inject(Router);
-	activeTab = signal<'projects'| 'experiences'| 'skills'>('projects');
-
-	tabs: Array<{ id: 'projects'| 'experiences'| 'skills'; label: string }> = [
+	readonly tabs: TabItem[] = [
 		{ id: 'projects', label: 'Projects' },
-		{ id: 'skills', label: 'Skills' },
 		{ id: 'experiences', label: 'Experience' },
+		{ id: 'skills', label: 'Skills' },
+		{ id: 'about', label: 'About me'}
 	];
-
-	navigate(id: 'projects'| 'experiences'| 'skills'): void {
-		this.activeTab.set(id);
-		this.router.navigate([id]);
-	}
 }

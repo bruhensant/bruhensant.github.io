@@ -1,21 +1,19 @@
 <div class="flex w-full">
 	<div
-		class="grid grid-cols-1 sm:grid-cols-3 w-full gap-4 sm:gap-2 p-4 border rounded-sm items-center"
+		class="grid w-full grid-cols-1 items-center gap-4 rounded-sm border p-4 sm:grid-cols-4 sm:gap-2"
 	>
-		@for(tab of tabs; track tab.id){
+		@for (tab of tabs; track tab.id) {
 		<div class="flex justify-between">
 			<a
-				(click)="navigate(tab.id)"
-				class="font-grotesk w-fit underline cursor-pointer uppercase leading-none underline-offset-4 hover:underline-offset-6 transition-all ease-in hover:text-blue-600"
-				[class.underline-offset-2]="tab.id === activeTab()"
-				[class.text-blue-500]="tab.id === activeTab()"
+				[routerLink]="['/', tab.id]"
+				routerLinkActive="underline-offset-2 text-blue-500"
+				class="ml-4 text-sm font-grotesk cursor w-fit cursor-pointer uppercase leading-none underline underline-offset-4 transition-all ease-in hover:text-blue-600 hover:underline-offset-6"
 			>
-				{{tab.label}}
+				{{ tab.label }}
 			</a>
 
-			@if(!$last){
-
-			<div class="sm:inline hidden border-r h-12 -my-4"></div>
+			@if (!$last) {
+			<div class="hidden h-12 -my-4 border-r border-dashed sm:inline"></div>
 			}
 		</div>
 		}

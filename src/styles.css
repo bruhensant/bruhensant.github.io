@@ -9,7 +9,7 @@
 /* Background Dot Matrix Pattern */
 :root {
   --pattern-dot-size: 1px;
-  --pattern-dot-space: 24px;
+  --pattern-dot-space: 32px;
   --pattern-dot-color: #e4e4e7;
   --pattern-bg-color: #ffffff;
 }

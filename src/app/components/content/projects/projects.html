@@ -1,5 +1,13 @@
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">
-	@for(project of projects; track project.id){
-	<project-card [project]="project"></project-card>
+<div class="grid grid-cols-1 gap-4 p-4" [class.sm:grid-cols-2]="projects.length > 0">
+	@if(projects.length > 0) { 
+		@for(project of projects; track project.id){
+			<project-card [project]="project"></project-card>
+		} 
+	} @else {
+		
+	<div class="border border-dashed rounded-lg w-full h-40 border-zinc-300 flex items-center justify-center">
+		<code class="font-grotesk animate-pulse text-zinc-300">work in progress...</code>
+	</div>
+	
 	}
 </div>
