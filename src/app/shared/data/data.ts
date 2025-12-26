@@ -9,7 +9,7 @@ export const experiences: Array<Experience> = [
 		company: {
 			id: 'c-1',
 			name: 'Automining',
-			webpage: 'https://www.automining.com.br/',
+			url: 'https://www.automining.com.br/',
 		},
 		start: new Date('2024-06-01'),
 		description:
@@ -38,7 +38,7 @@ export const experiences: Array<Experience> = [
 		company: {
 			id: 'c-2',
 			name: 'Automining',
-			webpage: 'https://www.automining.com.br/',
+			url: 'https://www.automining.com.br/',
 		},
 		start: new Date('2022-09-01'),
 		end: new Date('2024-06-01'),
@@ -68,7 +68,7 @@ export const experiences: Array<Experience> = [
 		company: {
 			id: 'c-3',
 			name: 'Mineração Vale Verde',
-			webpage: 'https://vale-verde.com/',
+			url: 'https://vale-verde.com/',
 		},
 		start: new Date('2021-10-01'),
 		end: new Date('2022-09-01'),
@@ -154,7 +154,6 @@ export const skills: Array<Skill> = [
 	{
 		id: '7',
 		name: 'UX/UI',
-		url: '',
 	},
 	{
 		id: '8',
@@ -214,22 +213,18 @@ export const skills: Array<Skill> = [
 	{
 		id: '19',
 		name: 'Project Management',
-		url: '',
 	},
 	{
 		id: '20',
 		name: 'Team Leadership',
-		url: '',
 	},
 	{
 		id: '21',
 		name: 'Technical Leadership',
-		url: '',
 	},
 	{
 		id: '22',
 		name: 'Design',
-		url: '',
 	},
 	{
 		id: '23',
@@ -239,14 +234,14 @@ export const skills: Array<Skill> = [
 	{ id: 'jsdoc', name: 'JSDoc', url: 'https://jsdoc.app' },
 	{ id: 'bpmn', name: 'BPMN', url: 'https://bpmn.io' },
 	{ id: 'storybook', name: 'Storybook', url: 'https://storybook.js.org' },
-	{ id: '', name: 'Chromatic', url: 'https://www.chromatic.com' },
+	{ id: 'chromatic', name: 'Chromatic', url: 'https://www.chromatic.com' },
 	{
 		id: 'confluece',
 		name: 'Confluence',
 		url: 'https://www.atlassian.com/software/confluence',
 	},
 	{ id: 'openai-api', name: 'OpenAI API', url: 'https://openai.com/api/' },
-	{ id: '', name: 'Firebase', url: 'https://firebase.google.com' },
+	{ id: 'firebase', name: 'Firebase', url: 'https://firebase.google.com' },
 	{
 		id: 'google-maps-api',
 		name: 'Google Maps API',

@@ -1,7 +1,15 @@
 <div class="p-4 gap-2 flex flex-col rounded-sm border border-zinc-300">
-	<div class="flex justify-between">
+	<div class="flex items-baseline justify-between">
 		<span class="font-grotesk text-sm"> {{experience().role}} </span>
-		<span class="font-sans text-sm text-zinc-500"> {{experience().company.name}}</span>
+		<span class="font-grotesk text-xs text-zinc-400">
+			@if(experience().company.url) {
+			<a [href]="experience().company.url" target="_blank" rel="noopener noreferrer" class="underline underline-offset-4 hover:underline-offset-6 transition-all ease-in">
+				{{experience().company.name}}
+			</a>
+			} @else {
+			<span> {{experience().company.name}} </span>
+			}
+		</span>
 	</div>
 
 	<div class="border-t -mx-4 my-1 border-zinc-300"></div>
@@ -11,7 +19,7 @@
 			@if(experience().end){
 			<span class="text-xs"> - {{experience().end | date:'MMM yyyy'}}</span>
 			} @else {
-			<span class="text-xs"> - now </span>
+			<span class="text-xs"> - present </span>
 			}
 		</div>
 	</div>

@@ -1,5 +1,5 @@
 import { DataService } from '@/app/shared/data/data.service';
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import type { Experience } from '@/app/shared/types/types';
 import { ExperienceCard } from '../cards/experience-card/experience-card';
 
@@ -7,6 +7,7 @@ import { ExperienceCard } from '../cards/experience-card/experience-card';
 	selector: 'experiences',
 	imports: [ExperienceCard],
 	templateUrl: './experiences.html',
+	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Experiences {
 	experiences: Array<Experience> = inject(DataService).getAllExperiences();

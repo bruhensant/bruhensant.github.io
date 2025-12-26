@@ -3,7 +3,7 @@ export type Base = {
 };
 
 export type Project = Base & {
-	title: string;
+	name: string;
 	description: string;
 };
 
@@ -18,15 +18,15 @@ export type Experience = Base & {
 
 export type Company = Base & {
 	name: string;
-	webpage?: string;
+	url?: string;
 };
 
 export type Feat = Base & {
 	content: string;
-	link?: string;
+	url?: string;
 };
 
 export type Skill = Base & {
 	name: string;
-	url: string;
+	url?: string;
 };

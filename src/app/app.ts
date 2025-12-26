@@ -1,11 +1,12 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
 	selector: 'app-root',
 	imports: [RouterOutlet],
 	templateUrl: './app.html',
+	changeDetection: ChangeDetectionStrategy.OnPush,
 	host: {
 		'(document:mousemove)': 'onMouseMove($event)',
 	},

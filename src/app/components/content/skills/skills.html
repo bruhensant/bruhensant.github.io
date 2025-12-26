@@ -1,4 +1,4 @@
-<div class="flex flex-wrap gap-4 p-4">
+<div class="flex flex-wrap gap-3 p-4">
 	@for(skill of skills; track skill){
 	<span
 		class="px-1.5 group py-1 border border-zinc-300 hover:border-black hover:bg-zinc-50 transition-colors ease-in flex leading-none rounded-sm text-sm font-grotesk"
@@ -8,7 +8,7 @@
 	>
 		@if(skill.url) {
 
-		<a [href]="skill?.url"> {{skill.name}} </a>
+		<a [href]="skill?.url" target="_blank" rel="noopener noreferrer"> {{skill.name}} </a>
 		} @else {
 		<span> {{skill.name}} </span>
 		}

@@ -1,10 +1,9 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'linkedin-icon',
-  imports: [],
-  templateUrl: './linkedin-icon.html',
+	selector: 'linkedin-icon',
+	imports: [],
+	templateUrl: './linkedin-icon.html',
+	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LinkedinIcon {
-
-}
+export class LinkedinIcon {}
