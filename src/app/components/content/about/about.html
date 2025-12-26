@@ -1,0 +1,27 @@
+<div class="flex flex-col gap-4 p-4">
+	<div class="border border-dashed rounded-sm border-zinc-300 text-xs p-4">
+		Here are some media I have consumed recently (last update: 26 Dec 2025)
+	</div>
+	<div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-4">
+		@for(media of mediaList; track media.id){
+
+		<a
+			[href]="media.url"
+			target="_blank"
+			class="border border-zinc-300 hover:bg-zinc-100 transition-colors hover:border-black rounded-sm p-4 flex flex-col gap-2"
+		>
+			<span class="font-grotesk leading-none">{{media.id | titlecase }}</span>
+			<img
+				[alt]="media.name + ' by ' + media.source"
+				class="rounded-sm h-80 object-cover"
+				[src]="media.pictureUrl"
+			/>
+			<div class="flex gap-1 *:text-xs *:leading-none font-sans italic text-zinc-500">
+				<span class="underline underline-offset-3">{{media.name}}</span>
+				<span> by </span>
+				<span>{{media.source}}</span>
+			</div>
+		</a>
+		}
+	</div>
+</div>
