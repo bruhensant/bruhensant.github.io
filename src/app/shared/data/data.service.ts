@@ -24,7 +24,9 @@ export class DataService {
 	}
 
 	getAllExperiences(): Array<Experience> {
-		return this.allExperiences;
+		return this.allExperiences.sort((experienceA, experienceB) => {
+			return experienceB.start.getTime() - experienceA.start.getTime();
+		});
 	}
 
 	getAllSkills(): Array<Skill> {
