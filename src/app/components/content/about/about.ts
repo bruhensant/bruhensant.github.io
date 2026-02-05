@@ -10,10 +10,10 @@ export class About {
 	mediaList = [
 		{
 			id: 'boardgame',
-			name: 'Tapestry',
+			name: 'Expeditions',
 			pictureUrl:
-				'https://cf.geekdo-images.com/7kqDmkUMGxXHr1wNPA7Gvg__imagepagezoom/img/zLcx71a4tUl5tKUzYhMWX7QZZDs=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic4884996.jpg',
-			url: 'https://boardgamegeek.com/boardgame/286096/tapestry',
+				'https://cf.geekdo-images.com/jZWHWTE9YN7N9OEXdqzFcw__imagepage/img/hYPnC6P8e124Oe94s4pXrmiUJ7c=/fit-in/900x600/filters:no_upscale():strip_icc()/pic7327709.png',
+			url: 'https://boardgamegeek.com/boardgame/379078/expeditions',
 			source: 'Stonemaier Games',
 		},
 		{
@@ -26,10 +26,10 @@ export class About {
 		},
 		{
 			id: 'music',
-			name: '(Album) Hollow World',
+			name: '(Album) Embrace',
 			pictureUrl:
-				'https://i.scdn.co/image/ab67616d0000b2732de956c29e983ef5667e78f9',
-			url: 'https://open.spotify.com/intl-pt/album/1X7hgRvsPzxBrc0Q3HC719',
+				'https://i.scdn.co/image/ab67616d0000b2734d51a157fbe1ceb35a2be30f',
+			url: 'https://open.spotify.com/intl-pt/album/3QnqZrz7k2KCutkHSzfV4M',
 			source: 'Kill The Noise',
 		},
 	];
