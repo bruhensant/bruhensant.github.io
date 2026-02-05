@@ -1,6 +1,6 @@
 <div class="flex flex-col gap-4 p-4">
 	<div class="border border-dashed rounded-sm border-zinc-300 text-xs p-4">
-		Here are some media I have consumed recently (last update: 26 Dec 2025)
+		Here are some media I have consumed recently (last update: {{ lastUpdate | date}})
 	</div>
 	<div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-4">
 		@for(media of mediaList; track media.id){

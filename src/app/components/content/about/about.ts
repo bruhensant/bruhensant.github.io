@@ -1,12 +1,14 @@
-import { TitleCasePipe } from '@angular/common';
+import { DatePipe, TitleCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
 	selector: 'about',
-	imports: [TitleCasePipe],
+	imports: [TitleCasePipe, DatePipe],
 	templateUrl: './about.html',
 })
 export class About {
+	
+	lastUpdate = new Date('05/02/2026').toLocaleDateString('pt-BR');
 	mediaList = [
 		{
 			id: 'boardgame',
