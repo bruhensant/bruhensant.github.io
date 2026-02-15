@@ -13,12 +13,12 @@ export const experiences: Array<Experience> = [
 		},
 		start: new Date('2024-06-01'),
 		description:
-			'Serving as a technical reference and mentor in Frontend and Design projects, designing systems, architectures, and design patterns.',
+			'Served as a technical reference and mentor in Frontend and Design projects, designing systems, architectures, and design patterns.',
 		feats: [
 			{
 				id: 'exp-1-1',
 				content:
-					'Serving as a technical reference and mentor in Frontend and Design projects, designing systems, architectures, and design patterns.',
+					'Served as a technical reference and mentor in Frontend and Design projects, designing systems, architectures, and design patterns.',
 			},
 			{
 				id: 'exp-1-2',
