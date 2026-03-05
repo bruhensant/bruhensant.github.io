@@ -31,7 +31,7 @@ export class About {
 			name: '(Album) In Death We Just Begun',
 			pictureUrl:
 				'https://i.scdn.co/image/ab67616d0000b273423a6720587a664a2b5b223c',
-			url: 'https://open.spotify.com/intl-pt/album/3QnqZrz7k2KCutkHSzfV4M',
+			url: 'https://open.spotify.com/intl-pt/album/6lQSombsKLtAaoJzlkU9xf',
 			source: 'Ryan Lott - Poppy - Son Lux',
 		},
 	];
