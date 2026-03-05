@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class About {
 	
-	lastUpdate = new Date('05/02/2026').toLocaleDateString('pt-BR');
+	lastUpdate = new Date('05/03/2026').toLocaleDateString('pt-BR');
 	mediaList = [
 		{
 			id: 'boardgame',
@@ -28,11 +28,11 @@ export class About {
 		},
 		{
 			id: 'music',
-			name: '(Album) Embrace',
+			name: '(Album) In Death We Just Begun',
 			pictureUrl:
-				'https://i.scdn.co/image/ab67616d0000b2734d51a157fbe1ceb35a2be30f',
-			url: 'https://open.spotify.com/intl-pt/album/3QnqZrz7k2KCutkHSzfV4M',
-			source: 'Kill The Noise',
+				'https://i.scdn.co/image/ab67616d0000b273423a6720587a664a2b5b223c',
+			url: 'https://open.spotify.com/intl-pt/album/6lQSombsKLtAaoJzlkU9xf',
+			source: 'Ryan Lott - Poppy - Son Lux',
 		},
 	];
 }
