@@ -28,11 +28,11 @@ export class About {
 		},
 		{
 			id: 'music',
-			name: '(Album) Embrace',
+			name: '(Album) In Death We Just Begun',
 			pictureUrl:
-				'https://i.scdn.co/image/ab67616d0000b2734d51a157fbe1ceb35a2be30f',
+				'https://i.scdn.co/image/ab67616d0000b273423a6720587a664a2b5b223c',
 			url: 'https://open.spotify.com/intl-pt/album/3QnqZrz7k2KCutkHSzfV4M',
-			source: 'Kill The Noise',
+			source: 'Ryan Lott - Poppy - Son Lux',
 		},
 	];
 }
