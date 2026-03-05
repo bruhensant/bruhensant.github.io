@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class About {
 	
-	lastUpdate = new Date('05/02/2026').toLocaleDateString('pt-BR');
+	lastUpdate = new Date('05/03/2026').toLocaleDateString('pt-BR');
 	mediaList = [
 		{
 			id: 'boardgame',
