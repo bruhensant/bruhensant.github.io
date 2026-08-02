@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <style>
+    :root {
+      --bg-color: #09090b;
+      --border-color: #27272a;
+      --text-color: #ffffff;
+      --accent-color: #3b82f6;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg-color: #ffffff;
+        --border-color: #e4e4e7;
+        --text-color: #09090b;
+        --accent-color: #2563eb;
+      }
+    }
+  </style>
+  <rect width="32" height="32" rx="7" fill="var(--bg-color)" stroke="var(--border-color)" stroke-width="1.5"/>
+  <text x="16" y="21.5" font-family="'Space Grotesk', monospace, sans-serif" font-size="14" font-weight="700" fill="var(--text-color)" text-anchor="middle">[b]</text>
+</svg>

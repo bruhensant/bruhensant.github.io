@@ -1,7 +1,7 @@
 <div class="flex flex-wrap gap-3 p-4">
 	@for(skill of skills; track skill){
 	<span
-		class="px-1.5 group py-1 border border-zinc-300 hover:border-black hover:bg-zinc-50 transition-colors ease-in flex leading-none rounded-sm text-sm font-grotesk"
+		class="px-1.5 group py-1 border border-zinc-300 hover:border-black hover:bg-zinc-50 transition-colors ease-in flex leading-none rounded-sm text-sm font-grotesk dark:border-zinc-700 dark:text-zinc-300 dark:hover:border-zinc-400 dark:hover:bg-zinc-800"
 		[class.cursor-default]="!skill.url"
 		[class.hover:border-zinc-300]="!skill.url"
 		[class.bg-none]="!skill.url"
